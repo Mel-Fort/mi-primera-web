@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<!-- un doc HTML contiene varias etiquetas para estructurar una página web y sus contenidos -->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Parque Natural del Horizonte</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<!-- HEAD : se utiliza para definir metadatos, el título de la página y enlaces a
+otros recursos como CSS o JavaScript -->
+<body>
+<nav>
+<ul>
+<li><a class="menu" href="#la-flora">La Flora</a></li>
+<li><a class="menu" href="#la-fauna">La Fauna</a></li>
+<li><a class="menu" href="#actividades">Actividades Acuáticas</a></li>
+<li><a class="menu" href="#mapa-interactiva">Mapa interactiva</a></li>
+</ul>
+</nav>
+<!-- <nav>...</nav> = NAVEGACIÓN INTERNA: 
+       Permite al usuario desplazarce rápidamente a diferentes secciones de la misma página sin necesidad de hacer "scroll".
+       Ofrece una acceso rápido, una estructura clara, mejor usabilidad y optimisación del tiempo.-->
+
+
+<button onclick="cambiarModo(this)" style="margin: 10px;">Cambiar a modo oscuro</button>
+<script>
+  function cambiarModo(boton) {
+    document.body.classList.toggle('modo-oscuro');
+    if (document.body.classList.contains('modo-oscuro')) {
+      boton.textContent = "Cambiar a modo claro";
+    } else {
+      boton.textContent = "Cambiar a modo oscuro";
+    }
+  }
+</script>
+
+<h1>Bienvenido al Parque Natural del Horizonte :</h1>
+<h2>Un Refugio de Paz y Aventura.</h2>
+<!-- SECTION: Son los puntos de destino de los enlaces de la navegación interna.
+         Permite organización y clarida, una navegación eficiente, una jerarquía visual y hace que el sitio sea más accesible.-->
+<p><b>Descubre la belleza inexplorada</b> de la naturaleza en el <i>Parque Natural del Horizonte</i>. Un lugar único donde la tranquilidad, la biodiversidad y la aventura se unen para ofrecer una experiencia inolvidable. Ya sea que busques relajarte rodeado de paisajes impresionante o vivir una aventura al aire libre, nuestro parque te ofrece el espacio perfecto para conectar con la naturaleza y disfrutar de actividades para toda la familia.
+Ven y explora un refugio natural en el corazon de la tierra.</p>
+<br/>
+<div class="multimedia">
+<p><u>Para una mejor inmersion, activar el audio para acompañar el video</u></p>
+<audio controls="" loop="" src="sound-of-the-mountain-birds-and-the-distant-river-63325.mp3">
+    Tu navegador no soporta el elemento 
+    <code><audio src="sound-of-the-mountain-birds-and-the-distant-river-63325.mp3"></audio></code></audio>
+<br/>
+<!-- Los archivos de audio pueden tranformar una experiencia multimedia básica en algo mucho más atractivo y envolvente.Crean un ambiente, evocan emociones, estimula multiples sentidos, permiten a las personas con dispacidad visual de comprender el contenid. -->
+<!-- Video introductorio del parque -->
+<video controls="" height="300px" src="Video-de-parte-del-parque.mp4" width="auto">
+<track kind="subtitles" label="Español" src="subtitulos.vtt" srclang="es"/>
+Tu navegador no soporta el elemento <code><video src="Video-de-parte-del-parque.mp4"></video></code>
+</video>
+</div>
+<!-- Los subtítulos son fundamentales para garantizar la accecibilidad al contenido multimedia para todas las personas independientemente de sus capacidades o del entorno en el cual se encuentren.
+ Permiten a personas con discapacidad auditiva comprender el contenido, pueden incluir traducciones o transcripciones que ayudan a las personas que están aprendiendo un idioma, refuerzan la conprensión captando palabras dificiles de entender, acentos fuertes o frases técnicas y cumplen con las normativas de accesibilidad.-->
+<h3><u>Descubre nuestras actividades</u></h3>
+<ul>
+<!-- Lista no ordenada -->
+<!--Lista <ul> (no ordenada):
+Es una lista donde el orden no importa, y los elementos están marcados con viñetas. Se usa para agrupar cosas sin necesidad de numerarlas, como una lista de compras. -->
+<li>Senderismo y Rutas Interpretativas.</li>
+<li>Observación de la Vida Silvestre.</li>
+<li>Actividad Acuáticas y Paseos en Bote.</li>
+</ul>
+<img class="derecha" src="vistas senderismo.jpg" title="Vistas-durante-el-senderismo"/>
+<!-- Imagen alineada a la derecha (UNIDAD 2, actividad 4)-->
+<!-- El atributo "alt" es esencial para le accesibilidad, ya ue permite a los usuarios con discapacidad visuales entender el contenido de las imágenes a través de lectore de pantalla. -->
+<br/>
+<section id="la-flora"><h4><u>Senderismo y Rutas Interpretativas:</u></h4>
+<h5><li>Rutas señalizadas, educación ambiental y vistas panorámicas :</li></h5>
+<p>El senderismo en Horizonte es una de las actividades más enriquecedoras, ya que permite <b>explorar sus paisajes naturales</b> mientras se <u>aprende sobre su biodiversidad</u>. Las rutas interpretativas están diseñadas con señalización que guía al visitante, ofreciendo <i>información sobre las especies locales de plantas y animales</i>. Ya sea que desees una caminata tranquila o una ruta más desafiante, nuestras sendas están pensadas para todos los niveles, asegurando una experiencia inolvidable en contacto con la naturaleza.
+</p></section>
+<br/>
+<br/>
+<h5><u>Lo que podreis ver y aprender:</u></h5>
+<ol>
+<!-- Lista ordenada -->
+<!-- Lista <ol> (ordenada):
+Es una lista donde los elementos tienen un orden o jerarquía específica, y se numeran automáticamente (1, 2, 3...). Se usa para cosas como pasos de instrucciones o clasificaciones. -->
+<li>Diferenciar los típos de árboles.</li>
+<li>Listar y diferenciar las flores por típo y color.</li>
+<li>Diferenciar arbustos perennes y no perennes.</li>
+</ol>
+<div class="lista-container">
+<ul>
+<!-- Lista anidada no ordenada de segundo nivel -->
+<b>Árboles</b>
+<p>
+<ul>
+<li>Típos de árboles
+                <ul>
+<li>Roble</li>
+<li>Pino</li>
+<li>Álamo</li>
+<li>Sauce llorón</li>
+<li>Ciprés</li>
+</ul>
+</li>
+</ul>
+
+</p></ul>
+<ol>
+<b>Típos de arbusto</b>
+<p>
+<ol>
+<li>Arbustos perennes
+                <ul>
+<li>Acebo</li>
+<li>Boj</li>
+</ul>
+</li>
+<li>Arbustos no perennes
+                <ul>
+<li>Hortensia</li>
+<li>Rosa mosqueta</li>
+</ul>
+</li>
+</ol>
+
+</p></ol>
+<!-- Lista anidada ordenada segundo nivel-->
+<ul>
+<b>Típos de flores</b>
+<p>
+<ol>
+<li>Rosas</li>
+<li>Tulipanes</li>
+<li>Claveles</li>
+<li>Geranios</li>
+<li>Hibiscos</li>
+<li>Lavanda</li>
+</ol>
+
+</p></ul>
+</div>
+<!-- Lista anidada combinada (opcional) -->
+<!-- Lista anidada de segundo nivel:
+Es como una lista dentro de una lista dentro de otra lista. Es útil para organizar más jerarquías. Por ejemplo, dentro de la lista "Animales" tenemos la subcategoría de "Aves", a la cual podemos añadir otra lista más detallada con "Águilas", "Búhos" y "Gorriones".
+ -->
+<section id="la-fauna"><h4><u>Observación de la Vida Silvestre:</u></h4>
+<h5><li>Observación de la fauna local y fotografía:</li></h5>
+<p>La observación de la vida silvestre es una <b>experiencia única</b> que permite descubrir especies autóctonas en su entorno natural. El parque Horizonte es hogar de una <i>gran variedad de animales</i>, desde aves hasta mamíferos, y ofrece <u>rutas diseñadas</u> para maximizar el avistamiento responsable. Además, los visitantes pueden aprender a <i>capturar momentos inolvidables</i> mediante la fotografía, siempre con el respeto y la prudencia que demanda el contacto con la fauna local.
+</p></section>
+<img class="centrada" src="vida silvestre.jpg" title="Observa-la-vida-silvestre"/>
+<!-- Imagen centrada en la página (UNIDAD 2, actividad 4)-->
+<h5><u>Lo que podreis observar y fotografíar:</u></h5>
+<ol>
+<li>Observar animales</li>
+<li>Clasificar los insectos</li>
+</ol>
+<ul>
+<!-- Lista anidada:
+Es cuando una lista está dentro de otra. Sirve para agrupar subtemas relacionados con un tema principal. Por ejemplo, si tienes "Animales", puedes anidar una lista con "Aves", "Mamíferos" e "Insectos". -->
+<div class="lista-container">
+<li>
+        Aves
+        <ul>
+<li>Gorriones</li>
+<li>Palomas</li>
+<li>Águilas</li>
+<li>Búhos</li>
+</ul>
+</li>
+<li>
+        Insectos
+        <ul>
+<li>Mariposas</li>
+<li>Escarabajos</li>
+<li>Hormigas</li>
+<li>Abejas</li>
+</ul>
+</li>
+<li>
+        Mamíferos
+        <ol>
+<!-- Lista anidada ordenada -->
+<li>Ardillas</li>
+<li>Ciervos</li>
+<li>Zorros</li>
+<li>Murciélagos</li>
+</ol>
+</li>
+</div></ul>
+
+<img class="izquierda" src="act acuáticas.png" title="Canotaje-en-familia"/>
+<!-- La imagen se alinea a la izquierda (UNIDAD 2, actividad 4)-->
+<br/>
+<section id="actividades"><h4><u>Actividad Acuáticas y Paseos en Bote:</u></h4>
+<h5><li>Descubre el parque desde el agua, rutas en kayak, Barranquismo y muchas más:</li></h5>
+<p>Las actividades acuáticas en el parque Horizonte ofrecen una perspectiva diferente del paisaje. Disfruta de paseos en bote por nuestros tranquilos ríos y lagos, explorando la belleza natural mientras te dejas envolver por la serenidad del entorno. <b>Además</b>, para los más aventureros, se pueden <b>practicar deportes acuáticos </b>como <u>kayak y canotaje</u>, siempre <i>bajo estrictas normas de seguridad</i> para garantizar una experiencia divertida y segura para todos.
+</p></section>
+<div class="info-map"><p><b><u>Descubre más actividades gracias a nuestro mapa interactivo.</u></b></p> </div>
+<img alt="Mapa del Parque" class="img-interactivo" src="mapaparque.png" usemap="#Actividades"/>
+<map name="Actividades">
+<div title="La vida silvestre"><area alt="La vida silvestre" coords="954, 55, 1037, 57, 1008, 272" href="https://parquesnaturales.gva.es/es/web/pn-l-albufera/naturaleza-y-ciencia" shape="poly" target="_blank"/></div>
+<!-- El área de vida silvestre está diseñada para proporcionar información sobre las especies de flora y fauna que habitan en el parque. Al hacer clic en esta sección, el usuario será dirigido a una página o sección que detalla los hábitats, animales y plantas que se pueden encontrar en esta área.
+
+Mejora en la navegación facilitando la búsqueda de información específica sobre la naturaleza del parque.
+Mejorando la experiencia educativa, especialmente para visitantes interesados en el medio ambiente y ayudando a los usuarios a planificar su visita si buscan áreas de observación de aves o senderos para exploración natural -->
+<div title="Nuestras rutas y senderismo"><area alt="Rutas y senderos del Parque" coords="903, 504, 46" href="https://lagodeandalucia.com/senderismo/" shape="circle" target="_blank"/></div>
+<!-- El área de rutas y senderismo permite a los usuarios explorar diferentes caminos y senderos dentro del parque. Contiene enlaces a mapas interactivos, descripciones de senderos (longitud, dificultad, duración) y consejos para caminatas seguras.
+
+Mejora en la navegación ayudando a los visitantes a elegir la ruta más adecuada según su nivel de experiencia y preferencias.
+Tabién mejora la accesibilidad a la información sobre el parque, haciendo más sencillo planificar excursiones y promueve el uso responsable de los senderos al incluir recomendaciones sobre seguridad y cuidado del medio ambiente. -->
+<div title="Actividades náuticas"><area alt="Actividades" coords="156, 166, 400, 394" href="https://lagodeandalucia.com/actividades-nauticas/" shape="rect" target="_blank"/></div>
+<!-- Este área cubre las zonas relacionadas con actividades acuáticas como paseos en bote, kayak o pesca. Al interactuar con esta área, los usuarios son dirigidos a información relevante sobre horarios, reglas, precios de alquiler de equipo y áreas de acceso.
+
+Mejora en la navegación proporcionando un acceso rápido a detalles prácticos para quienes buscan actividades recreativas.
+Mejora también la organización del viaje, ayudando a los usuarios a conocer las opciones disponibles antes de llegar y reduce el tiempo de búsqueda de información en otras partes del sitio web. -->
+</map>
+<!-- En conclusión:
+- La descripción clara de cada área hace que los usuarios comprendan fácilmente lo que pueden encontrar.
+- Mejora la navegación al dirigir rápidamente a los visitantes hacia la información que más les interesa.
+- Aumenta la usabilidad del sitio y crea una experiencia interactiva más atractiva. -->
+<h6><a href="https://lagodeandalucia.com/" target="_blank">¡Ven a descubrir la naturaleza en su estado más puro! Reserva tu tour ahora y vuelve pronto para seguir explorando.</a></h6>
+<ul>
+<li><a href="https://www.miteco.gob.es/es/parques-nacionales-oapn/red-parques-nacionales/parques-nacionales.html" target="_blank">Página oficial de Parques Nacionales</a></li>
+<li><a href="https://es.wikipedia.org/wiki/Parques_nacionales_de_Espa%C3%B1a" target="_blank">Wikipedia sobre Parques Nacionales de España.</a></li>
+</ul>
+<!-- <a>...</a> ENLACES EXTERNOS: Dirigen al usuario a otras páginas web, también pueden usarse para dirigir al usuario a una parte concreta del sitio web (si da el caso, como seria por ejemplo con "Políticas de Privacidad" "Preguntas frecuentes" etc....).
+  Permite ampliar el conocimiento sin interrumpir la navegación en la página principal-->
+</body>
+<!-- BODY : contiene el contenido visible de la página, como textos,
+imágenes y enlaces -->
+<footer>
+<img alt="bosque-de-pinos" src="imgbajo.png"/>
+<i>en 2024 por Melanie.f</i>
+</footer>
+<!-- FOOTER : e se usa para contenido al final de la página, como
+información de derechos de autor, enlaces de contacto o navegación adicional.
+ -->
+</html>
+<!-- 
+ El uso adecuado de diferentes etiquetas HTML es fundamental para mejorar la estructura y comprensión del contenido en una página web. Las etiquetas de <h1>a <h6> nos permiten organizar el contenido jerárquicamente, facilitando así la lectura y la navegación. Las etiquetas <p>, <ul>, <div> entre otras, ayudan a dividir el texto en párrafos y listas, lo que hace que la información sea más digerible 
+-->
+<!-- UNIDAD 2, actividad 4: explicando el propósito de cada clase y
+cómo el CSS mejora la presentación de las imágenes en la página
+
+Class izquierda : 
+Proposito: Alinear la imagen a la izquierda del contenido.Permiteque el texto fluya a la derecha.
+Funcion: propoerciona estructura ordenada combinando texto e imagenes.
+
+Class derecha : 
+Propósito : Alinear la imagen a la derecha. El texto fluye a la izquierda. Alternar visialemente entre texto e imágenes en diferente secciones evita un diseño monotono.
+Función : Varia las posiciones de las imágenes creando una lectura más dinámica.
+
+Class centrada: 
+Propósito: centrar la imagen horizontalmente en nuestra página. Da protagonismo visual a dicha imagen. Ideal para destacar elementos o imágenes.
+Función: LLamar la atención sobre la imagen, crea un diseño limpio y simetrico
+
+
+Cómo el CSS mejora la presentación de las imágenes en la página.
+
+CSS permite diseñar páginas más ordenandas, atractivas, y facíles de usar optimizando la presentación de imagenes de una forma que seria complicado de lograr con solo HTML.
+
+con CSS podemos controlar la alieación de las imágenes, mejora la fluidez del diseño y la interaccion entre texto e imagen.
+Podemos establecer un ancho uniforme, al usar propridades como por ejemplo width: 45%; y height: auto;  haremos aue las imagenes se adapten a la pantalla del usuario, propriedades como margin y float permiten crear espacio entre imágenes y evitan asi que se amontonan.
+Entre otras cosas.
+-->
